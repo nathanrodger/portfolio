@@ -1,0 +1,5 @@
+.header {
+    @include container;
+    margin-top: $space_md;
+    margin-bottom: $space_lg;
+}

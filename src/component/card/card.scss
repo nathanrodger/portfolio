@@ -1,0 +1,24 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $space_md;
+
+    &:last-of-type {
+        margin-bottom: $space_lg;
+    }
+}
+
+.card__title {
+    margin-bottom: $space_xs;
+    color: $color_2;
+}
+
+.card__subtitle {
+    margin-bottom: $space_sm;
+    color: $color_3;
+    font-weight: 700;
+}
+
+.card__link {
+     align-self: flex-start;
+}

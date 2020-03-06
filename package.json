@@ -1,0 +1,16 @@
+{
+    "name": "portfolio",
+    "description": "Nathan Rodger Portfolio",
+    "version": "1.0.0",
+    "main": "src/index.html",
+    "scripts": {
+        "start": "parcel src/index.html --open --no-cache",
+        "build": "parcel build src/index.html --no-cache"
+    },
+    "author": "Nathan Rodger",
+    "license": "ISC",
+    "devDependencies": {
+        "parcel-bundler": "^1.12.4",
+        "sass": "^1.25.0"
+    }
+}

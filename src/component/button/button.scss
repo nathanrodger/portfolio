@@ -1,0 +1,25 @@
+button {
+    font-family: inherit;
+    font-size: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    height: 4.4rem;
+    max-width: 25rem;
+    padding-right: $space_md;
+    padding-left: $space_md;
+    color: $color_4;
+    font-weight: 700;
+    background-color: transparent;
+    border: 0.2rem solid $color_4;
+
+    &:hover {
+        color: $color_1;
+        background-color: $color_4;
+        box-shadow: none;
+    }
+}
