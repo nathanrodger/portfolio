@@ -55,5 +55,9 @@ p {
 
 .lead {
     margin-bottom: $space_lg;
-    font-size: 2rem;
+    font-size: 1.8rem;
+
+    @include breakpoint('sm') {
+        font-size: 2rem;
+    }
 }
