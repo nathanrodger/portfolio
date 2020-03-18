@@ -4,8 +4,8 @@
     "version": "1.0.0",
     "main": "src/index.html",
     "scripts": {
-        "start": "parcel src/index.html --open --no-cache",
-        "build": "parcel build src/index.html --no-cache"
+        "start": "parcel src/index.html --open --no-cache --out-dir docs",
+        "build": "parcel build src/index.html --no-cache --out-dir docs"
     },
     "author": "Nathan Rodger",
     "license": "ISC",
