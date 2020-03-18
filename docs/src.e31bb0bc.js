@@ -117,7 +117,22 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"script/email/email-builder.js":[function(require,module,exports) {
+/* Email builder */
+
+/**
+* Used to build out the mailto link, where the href is equal to the word email.
+* This is to add a first line of defense against bots.
+*/
+var user = 'nathanrodger';
+var domain = 'hotmail.co.uk';
+var element = document.querySelectorAll('a[href="email"]');
+element[0].setAttribute('href', "mailto:".concat(user, "@").concat(domain));
+},{}],"script/main.js":[function(require,module,exports) {
+"use strict";
+
+require("./email/email-builder");
+},{"./email/email-builder":"script/email/email-builder.js"}],"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -189,7 +204,13 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\asset\\font\\Roboto-Thin.woff":[["Roboto-Thin.fa0b197a.woff","asset/font/Roboto-Thin.woff"],"asset/font/Roboto-Thin.woff"],"./..\\asset\\font\\Roboto-Thin.woff2":[["Roboto-Thin.92b5ed56.woff2","asset/font/Roboto-Thin.woff2"],"asset/font/Roboto-Thin.woff2"],"./..\\asset\\font\\Roboto-Regular.woff":[["Roboto-Regular.6e660a00.woff","asset/font/Roboto-Regular.woff"],"asset/font/Roboto-Regular.woff"],"./..\\asset\\font\\Roboto-Regular.woff2":[["Roboto-Regular.cc6eee36.woff2","asset/font/Roboto-Regular.woff2"],"asset/font/Roboto-Regular.woff2"],"./..\\asset\\font\\Roboto-Bold.woff":[["Roboto-Bold.1e16e3c8.woff","asset/font/Roboto-Bold.woff"],"asset/font/Roboto-Bold.woff"],"./..\\asset\\font\\Roboto-Bold.woff2":[["Roboto-Bold.c2e0ff67.woff2","asset/font/Roboto-Bold.woff2"],"asset/font/Roboto-Bold.woff2"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./..\\asset\\font\\Roboto-Thin.woff":[["Roboto-Thin.fa0b197a.woff","asset/font/Roboto-Thin.woff"],"asset/font/Roboto-Thin.woff"],"./..\\asset\\font\\Roboto-Thin.woff2":[["Roboto-Thin.92b5ed56.woff2","asset/font/Roboto-Thin.woff2"],"asset/font/Roboto-Thin.woff2"],"./..\\asset\\font\\Roboto-Regular.woff":[["Roboto-Regular.6e660a00.woff","asset/font/Roboto-Regular.woff"],"asset/font/Roboto-Regular.woff"],"./..\\asset\\font\\Roboto-Regular.woff2":[["Roboto-Regular.cc6eee36.woff2","asset/font/Roboto-Regular.woff2"],"asset/font/Roboto-Regular.woff2"],"./..\\asset\\font\\Roboto-Bold.woff":[["Roboto-Bold.1e16e3c8.woff","asset/font/Roboto-Bold.woff"],"asset/font/Roboto-Bold.woff"],"./..\\asset\\font\\Roboto-Bold.woff2":[["Roboto-Bold.c2e0ff67.woff2","asset/font/Roboto-Bold.woff2"],"asset/font/Roboto-Bold.woff2"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+"use strict";
+
+require("./script/main.js");
+
+require("./style/main.scss");
+},{"./script/main.js":"script/main.js","./style/main.scss":"style/main.scss"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +238,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61074" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60695" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -393,5 +414,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/main.3d6386d6.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
+//# sourceMappingURL=/src.e31bb0bc.js.map
