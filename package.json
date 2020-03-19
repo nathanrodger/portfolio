@@ -4,12 +4,17 @@
     "version": "1.0.0",
     "main": "src/index.html",
     "scripts": {
-        "start": "parcel src/index.html --open --no-cache --out-dir docs"
+        "start": "parcel src/index.html --open --no-cache --out-dir docs",
+        "build": "parcel build src/index.html --no-cache --out-dir docs --public-url ./"
     },
     "author": "Nathan Rodger",
     "license": "ISC",
     "devDependencies": {
         "parcel-bundler": "^1.12.4",
         "sass": "^1.25.0"
+    },
+    "dependencies": {
+        "script": "^0.1.4",
+        "style": "0.0.3"
     }
 }
