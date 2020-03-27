@@ -2,7 +2,9 @@
 * 1. Adds underline to anchors on hover
 */
 
-a {
+.anchor {
+    display: inline-flex;
+    align-items: center;
     color: $color_4;
     font-weight: 700;
     text-decoration: none;
@@ -14,5 +16,12 @@ a {
 
     &:visited {
         color: $color_4;
+    }
+}
+
+.icon {
+    .anchor & {
+        margin-left: 0.8rem;
+        fill: $color_4;
     }
 }

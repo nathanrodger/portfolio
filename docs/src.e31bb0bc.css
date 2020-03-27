@@ -141,16 +141,23 @@ body {
 /**
 * 1. Adds underline to anchors on hover
 */
-a {
+.anchor {
+  display: inline-flex;
+  align-items: center;
   color: #fac73a;
   font-weight: 700;
   text-decoration: none;
 }
-a:hover {
+.anchor:hover {
   box-shadow: inset 0 0 0 transparent, inset 0 -0.2rem 0 #fac73a;
 }
-a:visited {
+.anchor:visited {
   color: #fac73a;
+}
+
+.anchor .icon {
+  margin-left: 0.8rem;
+  fill: #fac73a;
 }
 
 .title {
@@ -223,6 +230,7 @@ button {
   padding-left: 3.2rem;
   color: #fac73a;
   font-weight: 700;
+  text-decoration: none;
   background-color: transparent;
   border: 0.2rem solid #fac73a;
 }
@@ -230,6 +238,12 @@ button {
   color: #022641;
   background-color: #fac73a;
   box-shadow: none;
+}
+
+.icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: #ffe0d1;
 }
 
 /*# sourceMappingURL=/src.e31bb0bc.css.map */
