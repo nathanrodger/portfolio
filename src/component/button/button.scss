@@ -5,6 +5,11 @@ button {
     cursor: pointer;
 }
 
+/**
+* 1. First media query is to support when the current device has a real hover state
+* Second media query is to support IE11
+*/
+
 .button {
     display: inline-flex;
     align-items: center;
@@ -18,9 +23,11 @@ button {
     background-color: transparent;
     border: 0.2rem solid $color_4;
 
-    &:hover {
-        color: $color_1;
-        background-color: $color_4;
-        box-shadow: none;
+    @media (hover: hover), (-ms-high-contrast: none) { // 1
+        &:hover {
+            color: $color_1;
+            background-color: $color_4;
+            box-shadow: none;
+        }
     }
 }
