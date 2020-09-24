@@ -3,12 +3,14 @@
     src: url('../asset/font/Roboto-Thin.woff') format('woff'),
         url('../asset/font/Roboto-Thin.woff2') format('woff2');
     font-weight: 300;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Roboto';
     src: url('../asset/font/Roboto-Regular.woff') format('woff'),
         url('../asset/font/Roboto-Regular.woff2') format('woff2');
+    font-display: swap;
 }
 
 @font-face {
@@ -16,6 +18,7 @@
     src: url('../asset/font/Roboto-Bold.woff') format('woff'),
         url('../asset/font/Roboto-Bold.woff2') format('woff2');
     font-weight: 700;
+    font-display: swap;
 }
 
 body {
@@ -55,9 +58,9 @@ p {
 
 .lead {
     margin-bottom: $space_lg;
-    font-size: 1.8rem;
+    font-size: 2rem;
 
     @include breakpoint('sm') {
-        font-size: 2rem;
+        font-size: 2.2rem;
     }
 }
