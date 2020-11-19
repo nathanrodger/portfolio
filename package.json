@@ -10,8 +10,9 @@
     "author": "Nathan Rodger",
     "license": "ISC",
     "devDependencies": {
+        "@babel/compat-data": "^7.9.0",
         "parcel-bundler": "^1.12.4",
-        "sass": "^1.25.0"
+        "sass": "^1.29.0"
     },
     "dependencies": {
         "script": "^0.1.4",
