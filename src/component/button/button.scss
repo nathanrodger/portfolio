@@ -22,6 +22,7 @@ button {
     text-decoration: none;
     background-color: transparent;
     border: 0.2rem solid $color_4;
+    border-radius: 0.3rem;
 
     &:focus {
         outline: 0.2rem dotted $white;
