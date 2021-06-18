@@ -1,6 +1,12 @@
+/*
+** title
+*/
+
 .title {
     margin-bottom: 0;
+    font-family: 'MADE Tommy Soft', Arial, Helvetica, sans-serif;
     font-size: 5.5rem;
+    font-weight: 700;
     line-height: 1;
 
     @include breakpoint('sm') {
@@ -10,18 +16,6 @@
 
 .title__text {
     display: block;
-    color: $white;
+    color: $black;
     white-space: nowrap;
-}
-
-.title__text:nth-child(2) {
-    color: $color_2;
-}
-
-.title__text:nth-child(3) {
-    color: $color_3;
-}
-
-.title__text:nth-child(4) {
-    color: $color_4;
 }

@@ -1,21 +1,32 @@
+/*
+** card
+*/
+
 .card {
     display: flex;
     flex-direction: column;
-    margin-bottom: $space_md;
+    margin-bottom: $space_md + $space_xs;
 
     &:last-of-type {
         margin-bottom: $space_lg;
     }
 }
 
+.card__head {
+    margin-bottom: $space_sm;
+    padding-left: $space_md;
+    border-left: 0.4rem solid $black;
+}
+
 .card__title {
-    margin-bottom: $space_xs;
-    color: $color_2;
+    margin-bottom: 0;
+    color: $black;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .card__subtitle {
     margin-bottom: $space_sm;
-    color: $color_3;
+    color: $black;
     font-weight: 700;
 }
 

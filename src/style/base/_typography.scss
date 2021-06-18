@@ -1,55 +1,86 @@
+/*
+** typography
+*/
+
+/*
+** font-face roboto
+*/
+
 @font-face {
     font-family: 'Roboto';
-    src: url('../asset/font/Roboto-Thin.woff') format('woff'),
-        url('../asset/font/Roboto-Thin.woff2') format('woff2');
+    src: url('../asset/font/roboto/roboto-thin.woff') format('woff'),
+        url('../asset/font/roboto/roboto-thin.woff2') format('woff2');
     font-weight: 300;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../asset/font/Roboto-Regular.woff') format('woff'),
-        url('../asset/font/Roboto-Regular.woff2') format('woff2');
+    src: url('../asset/font/roboto/roboto-regular.woff') format('woff'),
+        url('../asset/font/roboto/roboto-regular.woff2') format('woff2');
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Roboto';
-    src: url('../asset/font/Roboto-Bold.woff') format('woff'),
-        url('../asset/font/Roboto-Bold.woff2') format('woff2');
+    src: url('../asset/font/roboto/roboto-bold.woff') format('woff'),
+        url('../asset/font/roboto/roboto-bold.woff2') format('woff2');
     font-weight: 700;
     font-display: swap;
 }
 
+/*
+** font-face made tommy soft
+*/
+
+@font-face {
+    font-family: 'MADE Tommy Soft';
+    src: url('../asset/font/made-tommy-soft/made-tommy-soft-bold.woff') format('woff'),
+        url('../asset/font/made-tommy-soft/made-tommy-soft-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+
 body {
-    color: $white;
+    color: $black;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     font-size: 1.8rem;
     line-height: 1.6;
 }
+
+/*
+** heading
+*/
 
 h1,
 h2,
 h3 {
     margin: 0;
     padding: 0;
+    font-family: 'MADE Tommy Soft', Arial, Helvetica, sans-serif;
+    font-weight: 700;
     line-height: 1.2;
 }
 
 h1 {
-    margin-bottom: $space_md + $space_sm;
+    margin-bottom: $space_lg;
     font-size: 1.8rem * 2.5;
 }
 
 h2 {
-    margin-bottom: $space_md;
+    margin-bottom: $space_lg;
     font-size: 1.8rem * 2;
 }
 
 h3 {
-    margin-bottom: $space_sm;
+    margin-bottom: $space_md;
     font-size: 1.8rem * 1.5;
 }
+
+/*
+** paragraph
+*/
 
 p {
     margin-top: 0;

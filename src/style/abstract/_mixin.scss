@@ -1,7 +1,11 @@
 /*
-* breakpoint
-*
-* 1. references the breakpoints map in _variables.scss
+** mixin
+*/
+
+/*
+** breakpoint
+**
+** 1. references the breakpoints map in _variables.scss
 */
 
 @mixin breakpoint($device-size) {
@@ -11,6 +15,10 @@
         @content;
     }
 }
+
+/*
+** container
+*/
 
 @mixin container {
     display: block;

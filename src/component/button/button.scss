@@ -1,3 +1,7 @@
+/*
+** button
+*/
+
 button {
     font-family: inherit;
     font-size: inherit;
@@ -5,9 +9,9 @@ button {
     cursor: pointer;
 }
 
-/**
-* 1. First media query is to support when the current device has a real hover state
-* Second media query is to support IE11
+/*
+** 1. First media query is to support when the current device has a real hover state
+** Second media query is to support IE11
 */
 
 .button {
@@ -17,11 +21,11 @@ button {
     max-width: 25rem;
     padding-right: $space_md;
     padding-left: $space_md;
-    color: $color_4;
+    color: $black;
     font-weight: 700;
     text-decoration: none;
     background-color: transparent;
-    border: 0.2rem solid $color_4;
+    border: 0.2rem solid $black;
     border-radius: 0.3rem;
 
     &:focus {
@@ -30,8 +34,8 @@ button {
 
     @media (hover: hover), (-ms-high-contrast: none) { // 1
         &:hover {
-            color: $color_1;
-            background-color: $color_4;
+            color: $white;
+            background-color: $black;
             box-shadow: none;
         }
     }
