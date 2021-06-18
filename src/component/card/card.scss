@@ -14,7 +14,7 @@
 
 .card__head {
     margin-bottom: $space_sm;
-    padding-left: $space_md;
+    padding-left: $space_md - $space_xs;
     border-left: 0.4rem solid $black;
 }
 
