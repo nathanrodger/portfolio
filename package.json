@@ -2,19 +2,22 @@
     "name": "portfolio",
     "description": "Nathan Rodger Portfolio",
     "version": "1.0.0",
-    "main": "src/index.html",
+    "default": "src/index.html",
     "scripts": {
-        "start": "parcel src/index.html --open --no-cache --out-dir docs",
-        "build": "parcel build src/index.html --no-cache --out-dir docs --no-source-maps"
+        "start": "parcel src/index.html --open --no-cache --dist-dir docs",
+        "build": "parcel build src/index.html --no-cache --dist-dir docs --no-source-maps"
     },
     "author": "Nathan Rodger",
     "license": "ISC",
     "devDependencies": {
         "@babel/compat-data": "^7.25.2",
-        "parcel-bundler": "^1.12.5",
+        "@parcel/transformer-sass": "^2.12.0",
+        "parcel": "^2.12.0",
+        "process": "^0.11.10",
         "sass": "^1.77.8"
     },
     "dependencies": {
+        "photoswipe": "^5.4.4",
         "script": "^0.1.4",
         "style": "0.0.3"
     }
